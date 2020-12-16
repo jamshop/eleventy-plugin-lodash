@@ -1,0 +1,14 @@
+{
+  "name": "@jamshop/eleventy-plugin-lodash",
+  "version": "1.0.0",
+  "description": "Add lodash filters to 11ty.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
