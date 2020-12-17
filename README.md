@@ -66,7 +66,6 @@ testData: ["a","b","c","d"]
 ---
 layout: "page.njk"
 testData: ["a","b","c","d"]
-permalink: "/md.html"
 ---
 {% assign chunks = (testData | _chunk: 2) %}
 {% for chunk in chunks %}
@@ -79,12 +78,12 @@ permalink: "/md.html"
 ---
 layout: "page.njk"
 testData: ["a","b","c","d"]
-permalink: "/hbs.html"
 ---
 {{#each (_chunk testData 2) }}
   chunk: {{this}}<br>
 {{/each}}
 ```
-Note: There may be some lodash methods that make little sense as a filter. There may even be that some don't even work with all template languages especially where you need to provide functions as an argument. Desipte this the vast majority of methods should work. 
+
+**note**: There may be some lodash methods that make little sense as a filter. There may even be that some don't even work with all template languages especially where you need to provide functions as an argument. Desipte this the vast majority of methods should work. 
 
 See the Lodash docs for all methods: https://lodash.com/docs/4.17.15
